@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table xmlns="http://query.yahooapis.com/v1/schema/table.xsd">
+  <meta>
+    <author>Jim Pick</author>
+    <documentationURL>http://geobeer.jimpick.com/</documentationURL>
+    <sampleQuery>select * from {table} where name="Jim"</sampleQuery>
+  </meta>
+  <bindings>
+    <select itemPath="result.text" produces="XML">
+      <urls>
+        <url>http://geobeer.jimpick.com/helloworld</url>
+      </urls>
+      <inputs>
+        <key id="name" type="xs:string" paramType="query" required="false"/>
+		<key id="name" type="xs:string" paramType="query" required="false"/>
+		<key id="format" type="xs:string" paramType="query" required="false" default="xml" const="true"/>
+		<key id="exec" type="xs:string" paramType="matrix" required="true" default="" const="true"/>
+      </inputs>
+    </select>
+  </bindings>
+</table>
