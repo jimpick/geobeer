@@ -8,13 +8,12 @@
   <bindings>
     <select itemPath="result.text" produces="XML">
       <urls>
-        <url>http://geobeer.jimpick.com/helloworld</url>
+        <url>http://geobeer.jimpick.com/helloworld.xml</url>
       </urls>
       <inputs>
         <key id="name" type="xs:string" paramType="query" required="false"/>
-		<key id="name" type="xs:string" paramType="query" required="false"/>
-		<key id="format" type="xs:string" paramType="query" required="false" default="xml" const="true"/>
-		<key id="exec" type="xs:string" paramType="matrix" required="true" default="" const="true"/>
+        <key id="format" type="xs:string" paramType="query" required="false"
+             default="xml" const="true"/>
       </inputs>
     </select>
   </bindings>
